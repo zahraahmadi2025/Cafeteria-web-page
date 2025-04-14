@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --spacing: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -181,11 +182,20 @@
   .flex {
     display: flex;
   }
+  .table {
+    display: table;
+  }
   .h-screen {
     height: 100vh;
   }
   .w-full {
     width: 100%;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -193,12 +203,23 @@
   .justify-between {
     justify-content: space-between;
   }
+  .space-x-7 {
+    :where(& > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: calc(calc(var(--spacing) * 7) * var(--tw-space-x-reverse));
+      margin-inline-end: calc(calc(var(--spacing) * 7) * calc(1 - var(--tw-space-x-reverse)));
+    }
+  }
   .space-x-\[30px\] {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
       margin-inline-start: calc(30px * var(--tw-space-x-reverse));
       margin-inline-end: calc(30px * calc(1 - var(--tw-space-x-reverse)));
     }
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .bg-transparent-white {
     background-color: var(--color-transparent-white);
@@ -212,8 +233,197 @@
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
   .font-kalam {
     font-family: var(--font-kalam);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .before\:absolute {
+    &::before {
+      content: var(--tw-content);
+      position: absolute;
+    }
+  }
+  .before\:top-\[10px\] {
+    &::before {
+      content: var(--tw-content);
+      top: 10px;
+    }
+  }
+  .before\:top-\[12px\] {
+    &::before {
+      content: var(--tw-content);
+      top: 12px;
+    }
+  }
+  .before\:right-0 {
+    &::before {
+      content: var(--tw-content);
+      right: calc(var(--spacing) * 0);
+    }
+  }
+  .before\:right-\[-20px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -20px;
+    }
+  }
+  .before\:right-\[-30px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -30px;
+    }
+  }
+  .before\:right-\[-40px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -40px;
+    }
+  }
+  .before\:right-\[-50px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -50px;
+    }
+  }
+  .before\:right-\[-52px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -52px;
+    }
+  }
+  .before\:right-\[-54px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -54px;
+    }
+  }
+  .before\:right-\[-55px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -55px;
+    }
+  }
+  .before\:right-\[-56px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -56px;
+    }
+  }
+  .before\:right-\[-58px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -58px;
+    }
+  }
+  .before\:right-\[-60px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -60px;
+    }
+  }
+  .before\:right-\[-61px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -61px;
+    }
+  }
+  .before\:right-\[-62px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -62px;
+    }
+  }
+  .before\:right-\[-70px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -70px;
+    }
+  }
+  .before\:right-\[-80px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -80px;
+    }
+  }
+  .before\:right-\[-100px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -100px;
+    }
+  }
+  .before\:left-\[-62px\] {
+    &::before {
+      content: var(--tw-content);
+      left: -62px;
+    }
+  }
+  .before\:z-50 {
+    &::before {
+      content: var(--tw-content);
+      z-index: 50;
+    }
+  }
+  .before\:h-\[10px\] {
+    &::before {
+      content: var(--tw-content);
+      height: 10px;
+    }
+  }
+  .before\:w-\[10px\] {
+    &::before {
+      content: var(--tw-content);
+      width: 10px;
+    }
+  }
+  .before\:translate-\[-50\%\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-translate-x: -50%;
+      --tw-translate-y: -50%;
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .before\:rotate-\[315deg\] {
+    &::before {
+      content: var(--tw-content);
+      rotate: 315deg;
+    }
+  }
+  .before\:border-b-2 {
+    &::before {
+      content: var(--tw-content);
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 2px;
+    }
+  }
+  .before\:border-l-2 {
+    &::before {
+      content: var(--tw-content);
+      border-left-style: var(--tw-border-style);
+      border-left-width: 2px;
+    }
+  }
+  .before\:border-black {
+    &::before {
+      content: var(--tw-content);
+      border-color: var(--color-black);
+    }
+  }
+  .before\:content-\[\'\'\] {
+    &::before {
+      content: var(--tw-content);
+      --tw-content: '';
+      content: var(--tw-content);
+    }
   }
 }
 @import url("../public/fonts/kalam/Kalam-Regular.ttf");
@@ -222,10 +432,46 @@
   inherits: false;
   initial-value: 0;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-space-x-reverse: 0;
+      --tw-border-style: solid;
+      --tw-outline-style: solid;
+      --tw-content: "";
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
     }
   }
 }
