@@ -236,6 +236,9 @@
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .p-\[18px\] {
+    padding: 18px;
+  }
   .font-kalam {
     font-family: var(--font-kalam);
   }
@@ -268,6 +271,12 @@
     &::before {
       content: var(--tw-content);
       right: calc(var(--spacing) * 0);
+    }
+  }
+  .before\:right-\[-6px\] {
+    &::before {
+      content: var(--tw-content);
+      right: -6px;
     }
   }
   .before\:right-\[-20px\] {
