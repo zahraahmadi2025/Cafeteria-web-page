@@ -179,6 +179,9 @@
   .top-1 {
     top: calc(var(--spacing) * 1);
   }
+  .top-\[-50\%\] {
+    top: -50%;
+  }
   .top-\[0\] {
     top: 0;
   }
@@ -199,6 +202,9 @@
   }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
