@@ -11,6 +11,31 @@ const links =[
 ];
 let index =0;
 
+setInterval(()=>{
+    slider.style.backgroundImage =`url(${links[index]})`;
+    index =(index +1) % links.length;
+    if(index===1){
+        div1.classList.remove("hidden");
+        div1.classList.add("flex");
+        div2.classList.add("hidden");
+        div3.classList.add("hidden");
+    }
+     else if(index===2){
+        div2.classList.remove("hidden");
+        div2.classList.add("flex");
+        div1.classList.add("hidden");
+        div3.classList.add("hidden");}
+        else{
+            div3.classList.remove("hidden");
+            div3.classList.add("flex");
+            div1.classList.add("hidden");
+            div2.classList.add("hidden");
+        }
+    },3000);
+
+
+
+
 bRight.addEventListener("click",()=>{
     slider.style.backgroundImage =`url(${links[index]})`;
     index =(index +1) % links.length;
@@ -23,9 +48,3 @@ bLeft.addEventListener("click",()=>{
 
 
 
-
-setInterval(()=>{
-slider.style.backgroundImage =`url(${links[index]})`;
-index =(index +1) % links.length;
-
-},3000);
