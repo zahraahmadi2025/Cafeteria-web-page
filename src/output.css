@@ -252,8 +252,14 @@
   .items-center {
     align-items: center;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .space-x-3 {
     :where(& > :not(:last-child)) {

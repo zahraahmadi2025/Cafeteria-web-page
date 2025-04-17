@@ -5,9 +5,9 @@ const div1 =document.getElementById("div1");
 const div2 =document.getElementById("div2");
 const div3 =document.getElementById("div3");
 const links =[
-    "../public/images/ph2.jpg",
     "../public/images/ph1.jpg",
     "../public/images/ph3.jpg",
+    "../public/images/ph2.jpg",
 ];
 let index =0;
 
