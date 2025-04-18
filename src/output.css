@@ -393,6 +393,13 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .group-hover\:block {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        display: block;
+      }
+    }
+  }
   .before\:absolute {
     &::before {
       content: var(--tw-content);
