@@ -190,20 +190,8 @@
   .top-8 {
     top: calc(var(--spacing) * 8);
   }
-  .top-\[-50\%\] {
-    top: -50%;
-  }
-  .top-\[0\] {
-    top: 0;
-  }
-  .top-\[12px\] {
-    top: 12px;
-  }
   .top-\[40\%\] {
     top: 40%;
-  }
-  .top-\[50\%\] {
-    top: 50%;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
@@ -243,21 +231,6 @@
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
-  }
-  .w-\[20\%\] {
-    width: 20%;
-  }
-  .w-\[30\%\] {
-    width: 30%;
-  }
-  .w-\[40\%\] {
-    width: 40%;
-  }
-  .w-\[50\%\] {
-    width: 50%;
-  }
-  .w-\[60\%\] {
-    width: 60%;
   }
   .w-\[80\%\] {
     width: 80%;
@@ -343,9 +316,6 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
-  }
-  .p-\[18px\] {
-    padding: 18px;
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
@@ -448,70 +418,10 @@
       top: 10px;
     }
   }
-  .before\:top-\[12px\] {
-    &::before {
-      content: var(--tw-content);
-      top: 12px;
-    }
-  }
-  .before\:right-0 {
-    &::before {
-      content: var(--tw-content);
-      right: calc(var(--spacing) * 0);
-    }
-  }
-  .before\:right-\[-6px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -6px;
-    }
-  }
-  .before\:right-\[-20px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -20px;
-    }
-  }
-  .before\:right-\[-30px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -30px;
-    }
-  }
-  .before\:right-\[-40px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -40px;
-    }
-  }
   .before\:right-\[-50px\] {
     &::before {
       content: var(--tw-content);
       right: -50px;
-    }
-  }
-  .before\:right-\[-52px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -52px;
-    }
-  }
-  .before\:right-\[-54px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -54px;
-    }
-  }
-  .before\:right-\[-55px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -55px;
-    }
-  }
-  .before\:right-\[-56px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -56px;
     }
   }
   .before\:right-\[-58px\] {
@@ -520,46 +430,10 @@
       right: -58px;
     }
   }
-  .before\:right-\[-60px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -60px;
-    }
-  }
-  .before\:right-\[-61px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -61px;
-    }
-  }
   .before\:right-\[-62px\] {
     &::before {
       content: var(--tw-content);
       right: -62px;
-    }
-  }
-  .before\:right-\[-70px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -70px;
-    }
-  }
-  .before\:right-\[-80px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -80px;
-    }
-  }
-  .before\:right-\[-100px\] {
-    &::before {
-      content: var(--tw-content);
-      right: -100px;
-    }
-  }
-  .before\:left-\[-62px\] {
-    &::before {
-      content: var(--tw-content);
-      left: -62px;
     }
   }
   .before\:z-50 {
