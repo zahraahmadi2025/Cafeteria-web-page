@@ -914,6 +914,12 @@
       width: calc(var(--spacing) * 28);
     }
   }
+  .after\:w-32 {
+    &::after {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 32);
+    }
+  }
   .after\:w-\[100px\] {
     &::after {
       content: var(--tw-content);
