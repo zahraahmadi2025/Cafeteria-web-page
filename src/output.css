@@ -711,6 +711,12 @@
       width: calc(var(--spacing) * 28);
     }
   }
+  .before\:w-32 {
+    &::before {
+      content: var(--tw-content);
+      width: calc(var(--spacing) * 32);
+    }
+  }
   .before\:w-\[10px\] {
     &::before {
       content: var(--tw-content);
