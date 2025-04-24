@@ -541,6 +541,9 @@
   .py-\[100px\] {
     padding-block: 100px;
   }
+  .pb-10 {
+    padding-bottom: calc(var(--spacing) * 10);
+  }
   .text-center {
     text-align: center;
   }
