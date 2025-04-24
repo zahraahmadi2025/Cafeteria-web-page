@@ -20,7 +20,7 @@
 <div>
     <img src="../public/images/logo.png" alt="">
 </div>
-<ul class="flex space-x-[30px] items-center ">
+<ul class="flex space-x-[30px] items-center  ">
     <li><a href=""></a>Home</li>
     <li><a href=""></a>About Us</li>
     <li class="relative group"><a href="" class="before:content-[''] relative before:border-black before:absolute before:z-50 before:top-[10px] before:right-[-50px] before:h-[10px] before:w-[10px] before:border-b-2 before:border-l-2 before:rotate-[315deg] before:translate-[-50%]" ></a>
@@ -47,7 +47,7 @@
 </div>
 <!-- nav end -->
  <!-- slider start -->
-  <div id="slider-change" class="h-screen w-full bg-[url(../public/images/ph2.jpg)] bg-cover absolute top-0 left-0 -z-10">
+  <div id="slider-change" class="h-screen w-full bg-[url(../public/images/ph2.jpg)] bg-cover  absolute left-0 top-10-">
     <!-- button div start -->
 <div class="flex   h-screen relative  items-center  justify-between space-x-3 px-3.5 ">
 <button id="B-left" <i class="fa-solid fa-chevron-left h-14 w-14 text-2xl bg-gray-300 rounded-full text-white "></i></button> 
@@ -84,12 +84,12 @@
 <!-- slider end -->
  <!-- about us start -->
   <div class="w-full absolute mx-auto top-full font-semibold py-14">
-<h1 class=" w-full text-center befpre:-z-50 relative before:content-[''] before:left-[30%] before:top-3.5 before:bg-black  before:h-px before:w-32 before:absolute  capitalize
+<h1 class=" w-full text-center befpre:-z-50 relative before:content-[''] before:left-[30%] before:top-3.5 before:bg-black  before:h-px before:w-32 before:absolute  capitalize mt-20
  before:-z-50  after:content-[''] after:right-[30%] after:top-3.5 after:bg-black  after:h-px after:w-32 after:absolute 
 ">about us</h1>
 <p class="text-center">Lorem ipsum dolor st amet consectetur adipisicing elit.</p>
 <div class="grid grid-rows-1 grid-cols-2 gap-4 font-light">
-    <div class="grid grid-cols-6 grid-rows-2 gap-1 py-10 px-8">
+    <div class="grid grid-cols-6 grid-rows-2 gap-1 my-1.5 px-8">
       <img class="col-span-3 w-[100%] h-[200px] mt-20" src="../public/images/coffee-ph.jpeg" alt="" />
       <img class="col-span-3 w-[100%] h-[200px] mt-20" src="../public/images/coffee2-ph.jpeg" alt="" />
       <img class="col-span-2 h-[145px]" src="../public/images/coffee3-ph.jpeg" alt="" />
@@ -97,7 +97,7 @@
       <img class="col-span-2 h-[145px] w-[300px]" src="../public/images/coffee5-ph.jpeg" alt="" />
     
     </div>
-    <div class=" text-center py-22">
+    <div class=" text-center my-12">
       <h1 class="font-light text-3xl">Coffee</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -129,9 +129,117 @@
   </div>
   </div>
  <!-- about us end -->
+  <!-- our price start -->
+  <div
+  class="h-screen w-full bg-[url(../public/images/bg-price.jpeg)] bg-black bg-cover bg-fixed py-[100px] absolute top-[205vh]"
+>
+  <div class="-mt-4">
+    <h1
+      class="text-center text-3xl font-bold text-gray-300 before:content-[''] before:w-[100px] before:h-px before:absolute before:bg-white before:top-4 before:z-50 before:left-[100px] after:content-[''] after:w-[100px] after:h-px relative after:absolute after:bg-white after:top-4 after:z-50 after:right-32"
+    >
+      Our Price
+    </h1>
+    <p class="text-gray-200 font-bold mb-2.5 text-center">
+      Spend Quality time with your friends here
+    </p>
+  </div>
+  <div class="swiper flex justify-center items-center">
+    <div class="swiper-wrapper">
+      <div
+        class="swiper-slide h-[500px] w-[200px] border-8 hover:bg-gray-600 hover:border-black transition-all duration-200 hover:text-white bg-white p-7"
+      >
+        <h1 class="text-xl font-light">Cup Cake</h1>
+        <img      src="../public/images/coffee-ph.jpeg"  class="float-right border-2 border-black">  
+        
+       
+        
+        
+        <h1 class="text-2xl font-bold">120AFG</h1>
+        <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+      <div
+        class="swiper-slide h-[500px] w-[200px] border-8 hover:bg-gray-600 hover:border-black transition-all duration-200 hover:text-white bg-white p-7 "
+      >
+        <h1 class="text-xl font-light">Cup Cake</h1>
+        <img
+          class="float-right border-2 border-black"
+          src="../public/images/coffee2-ph.jpeg"
+          alt=""
+        />
+        <h1 class="text-2xl font-bold">120AFG</h1>
+        <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+      <div
+        class="swiper-slide h-[500px] w-[200px] border-8 hover:bg-gray-600 hover:border-black transition-all duration-200 hover:text-white bg-white p-7"
+      >
+        <h1 class="text-xl font-light">Cup Cake</h1>
+        <img
+          class="float-right border-2 border-black"
+          src="../public/images/coffee2-ph.jpeg"
+          alt=""
+        />
+        <h1 class="text-2xl font-bold">120AFG</h1>
+        <p class="font-light">Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <!-- <div class="swiper-scrollbar"></div> -->
+  </div>
+</div>
+  <!-- our price end -->
    
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop:false,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+breakpoints:{
+    640:{
+        slidesPerView:1,
+        spaceBetween:20,
+    },
+    768:{
+        slidesPerView:2,
+        spaceBetween:30,
+    },
+    1024:{
+        slidesPerView:3,
+        spaceBetween:30,
+    },
+},
+autoplay:{
+    delay:3000,
+},
+
+
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  }); 
+
+
+
+    </script>
 </body>
 </html> 
