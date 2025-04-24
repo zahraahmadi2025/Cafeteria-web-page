@@ -133,9 +133,9 @@
   <div
   class="h-screen w-full bg-[url(../public/images/bg-price.jpeg)] bg-black bg-cover bg-fixed py-[100px] absolute top-[205vh]"
 >
-  <div class="-mt-4">
+  <div class="">
     <h1
-      class="text-center text-3xl font-bold text-gray-300 before:content-[''] before:w-[100px] before:h-px before:absolute before:bg-white before:top-4 before:z-50 before:left-[100px] after:content-[''] after:w-[100px] after:h-px relative after:absolute after:bg-white after:top-4 after:z-50 after:right-32"
+      class="text-center text-3xl font-bold text-gray-300 before:content-[''] before:w-[100px] before:h-px before:absolute before:bg-white before:top-2 before:z-50 before:left-[30%] after:content-[''] after:w-[100px] after:h-px relative after:absolute after:bg-white after:top-2 after:z-50 after:right-[30%] mt-[-12px]"
     >
       Our Price
     </h1>
@@ -187,7 +187,7 @@
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    <!-- <div class="swiper-scrollbar"></div> -->
+
   </div>
 </div>
   <!-- our price end -->
@@ -200,7 +200,7 @@
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop:false,
+    loop:true,
   
     // If we need pagination
     pagination: {
@@ -232,10 +232,6 @@ autoplay:{
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
   }); 
 
 

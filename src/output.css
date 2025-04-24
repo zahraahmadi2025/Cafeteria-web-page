@@ -299,6 +299,9 @@
   .mt-22 {
     margin-top: calc(var(--spacing) * 22);
   }
+  .mt-\[-12px\] {
+    margin-top: -12px;
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -613,6 +616,12 @@
       position: absolute;
     }
   }
+  .before\:top-2 {
+    &::before {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 2);
+    }
+  }
   .before\:top-2\.5 {
     &::before {
       content: var(--tw-content);
@@ -697,6 +706,12 @@
       left: calc(var(--spacing) * 96);
     }
   }
+  .before\:left-\[-30\%\] {
+    &::before {
+      content: var(--tw-content);
+      left: -30%;
+    }
+  }
   .before\:left-\[30\%\] {
     &::before {
       content: var(--tw-content);
@@ -725,6 +740,12 @@
     &::before {
       content: var(--tw-content);
       left: 50%;
+    }
+  }
+  .before\:left-\[50px\] {
+    &::before {
+      content: var(--tw-content);
+      left: 50px;
     }
   }
   .before\:left-\[100px\] {
@@ -852,6 +873,12 @@
       position: absolute;
     }
   }
+  .after\:top-2 {
+    &::after {
+      content: var(--tw-content);
+      top: calc(var(--spacing) * 2);
+    }
+  }
   .after\:top-2\.5 {
     &::after {
       content: var(--tw-content);
@@ -900,6 +927,12 @@
       right: calc(var(--spacing) * 32);
     }
   }
+  .after\:right-36 {
+    &::after {
+      content: var(--tw-content);
+      right: calc(var(--spacing) * 36);
+    }
+  }
   .after\:right-40 {
     &::after {
       content: var(--tw-content);
@@ -916,6 +949,12 @@
     &::after {
       content: var(--tw-content);
       right: calc(var(--spacing) * 96);
+    }
+  }
+  .after\:right-\[-50\%\] {
+    &::after {
+      content: var(--tw-content);
+      right: -50%;
     }
   }
   .after\:right-\[30\%\] {
