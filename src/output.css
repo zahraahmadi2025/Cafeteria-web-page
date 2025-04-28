@@ -897,6 +897,22 @@
       width: 80%;
     }
   }
+  .lg\:before\:left-\[25\%\] {
+    @media (width >= 64rem) {
+      &::before {
+        content: var(--tw-content);
+        left: 25%;
+      }
+    }
+  }
+  .lg\:before\:left-\[30\%\] {
+    @media (width >= 64rem) {
+      &::before {
+        content: var(--tw-content);
+        left: 30%;
+      }
+    }
+  }
   .lg\:before\:left-\[80px\] {
     @media (width >= 64rem) {
       &::before {
