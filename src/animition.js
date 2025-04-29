@@ -4,6 +4,6 @@ function countup(el,target){
     const increment = target /100;
     
     const updatecount=()=>{
-        
+        current+=increment;
     }
 }
