@@ -9,6 +9,8 @@ function countup(el,target){
             el.textcontent =Math.ceil(current);
             requestAnimationFrame(updatecount);
         }
-        
-    }
+        else{
+            el.textCnpontent =target;
+        }
+    };
 }
