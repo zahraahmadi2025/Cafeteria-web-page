@@ -10,7 +10,15 @@ function countup(el,target){
             requestAnimationFrame(updatecount);
         }
         else{
-            el.textCnpontent =target;
+            el.textcontent=target;
         }
     };
+    updatecount();
 }
+
+
+const observer =new IntersectionObserver(
+    (entries)=>{
+        
+    }
+)
