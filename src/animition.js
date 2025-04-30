@@ -19,6 +19,8 @@ function countup(el,target){
 
 const observer =new IntersectionObserver(
     (entries)=>{
-        
+       if(entry.Isinteresecting){
+        const el =entry.target;
+       } 
     }
 )
