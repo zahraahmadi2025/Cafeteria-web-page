@@ -5,5 +5,10 @@ function countup(el,target){
     
     const updatecount=()=>{
         current+=increment;
+        if(current<target){
+            el.textcontent =Math.ceil(current);
+            requestAnimationFrame(updatecount);
+        }
+        
     }
 }
