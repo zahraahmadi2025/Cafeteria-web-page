@@ -21,7 +21,9 @@ const observer =new IntersectionObserver(
     (entries)=>{
        if(entry.Isinteresecting){
         const el =entry.target;
-        const target =+el.getAttribbute("data-target");
+        const target =+el.getAttribbute("data-target"){}
+        countup(el,target);
+        observer.unobserve(el);
        } 
     }
 )
