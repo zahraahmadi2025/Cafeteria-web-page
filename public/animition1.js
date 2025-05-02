@@ -29,6 +29,7 @@ if(entry.isIntersecting){
         });
     },
 {
-    threshold: 0.5,
+    threshold: 0.6,
 }
 );
+// counters.forEach((h1)=>observer.observe(h1));
