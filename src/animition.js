@@ -16,14 +16,19 @@ function countup(el,target){
     updatecount();
 }
 
-
-const observer =new IntersectionObserver(
+const observer = new IntersectionObserver(
     (entries)=>{
-       if(entry.Isinteresecting){
-        const el =entry.target;
-        const target =+el.getAttribbute("data-target"){}
-        countup(el,target);
-        observer.unobserve(el);
-       } 
-    }
-)
+        console.log(entries);
+        entries.forEach((entry)=>{
+if(entry.isIntersecting){
+    const el = entry.target;
+    const target = +el.getAttribute("data-target");
+    countup(el,target);
+    observer.unobserve(el);
+}
+        });
+    },
+{
+    threshold: 0.5,
+}
+);
