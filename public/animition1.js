@@ -32,4 +32,4 @@ if(entry.isIntersecting){
     threshold: 0.6,
 }
 );
-// counters.forEach((h1)=>observer.observe(h1));
+counters.forEach((h1)=>observer.observe(h1));
