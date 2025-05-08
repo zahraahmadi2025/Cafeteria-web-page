@@ -836,6 +836,11 @@
       width: 90%;
     }
   }
+  .lg\:flex-col {
+    @media (width >= 64rem) {
+      flex-direction: column;
+    }
+  }
   .lg\:items-center {
     @media (width >= 64rem) {
       align-items: center;
