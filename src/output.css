@@ -851,6 +851,11 @@
       align-items: center;
     }
   }
+  .lg\:gap-2\.5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 2.5);
+    }
+  }
   .lg\:px-28 {
     @media (width >= 64rem) {
       padding-inline: calc(var(--spacing) * 28);
